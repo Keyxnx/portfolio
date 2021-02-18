@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container search-position">
+      <div class="search-block">
+        <form method="GET" autocomplete="off">
+          <label for="search-box" class="search-box-label"
+            >Enter the city</label
+          >
+          <input id="search-box" type="text" name="search" class="search-box" />
+        </form>
+      </div>
+    </div>
+
+    <div class="date-block">
+      <div class="date-month"></div>
+      <div class="date-day"></div>
+      <div class="date-day-of-week"></div>
+      <div class="date-year"></div>
+    </div>
+
+    <div class="container">
+      <div class="temperature-layout">
+        <div class="temperature-block">
+          <div class="temperature">25 °C</div>
+        </div>
+        <div class="min-max-temperature">
+          <div class="max-temperature-block">
+            <div class="max-temperature-title">max</div>
+            <div class="max-temperature">28 °C</div>
+          </div>
+          <hr class="hr-temperature" />
+          <div class="min-temperature-block">
+            <div class="min-temperature-title">min</div>
+            <div class="min-temperature">22 °C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bottom-block">
+      <div class="weather-description-items">
+        <div class="weather-item">
+          <div class="weather-icon">
+            <svg>
+              <use xlink:href="./assets/svg/humidity.svg#Layer_1"></use>
+            </svg>
+          </div>
+          <div class="weather-info">Humidity</div>
+          <div class="weather-info-description humidity">43%</div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-icon">
+            <svg>
+              <use xlink:href="assets/svg/pressure.svg#Layer_1"></use>
+            </svg>
+          </div>
+          <div class="weather-info">Air Pressure</div>
+          <div class="weather-info-description air-pressure">1002 PS</div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-icon">
+            <svg>
+              <use xlink:href="assets/svg/thermometer.svg#Capa_1"></use>
+            </svg>
+          </div>
+          <div class="weather-info">Feels Like</div>
+          <div class="weather-info-description feels-like">24 °C</div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-icon">
+            <svg>
+              <use xlink:href="assets/svg/wind.svg#wind"></use>
+            </svg>
+          </div>
+          <div class="weather-info">Wind Speed</div>
+          <div class="weather-info-description wind-speed">1.2 km/h</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

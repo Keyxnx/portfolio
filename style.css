@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("assets/background-image.jpg") rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-position {
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-block {
+  font-family: "Goldman", "sans-serif";
+  margin-bottom: 50px;
+}
+
+.search-block label {
+  color: #f8f8ff;
+  letter-spacing: 1px;
+}
+
+.search-block input {
+  font-family: inherit;
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid #f8f8ff;
+  background-color: rgba(248, 248, 255, 0.2);
+  padding: 0 10px;
+  color: #f8f8ff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.date-block {
+  font-family: "Goldman", "sans-sarif";
+  width: 280px;
+  color: #f8f8ff;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 25px auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.temperature-layout {
+  display: flex;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50px 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.temperature-block {
+  font-family: "Goldman", "sans-serif";
+  font-size: 80px;
+  color: #f8f8ff;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.min-max-temperature {
+  font-family: "Goldman", "sans-serif";
+  font-size: 30px;
+  color: #f8f8ff;
+  width: 150px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-temperature-block {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hr-temperature {
+  margin: 0 auto;
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.min-temperature-block {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-block {
+  max-width: 1024px;
+  margin-bottom: 50px;
+}
+
+.weather-description-items {
+  font-family: "Goldman", "sans-serif";
+  color: #f8f8ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-item {
+  margin: 28px;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+svg {
+  fill: #f8f8ff;
+  width: 1em;
+  height: 1em;
+  font-size: 50px;
+}
+
+.weather-info {
+  font-size: 25px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-info-description {
+  font-size: 33px;
+}
+
+@media screen and (max-width: 490px) {
+  .temperature-layout {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+
+  .temperature-block {
+    height: 150px;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 60px;
+  }
+
+  .min-max-temperature {
+    width: 250px;
+    height: 100px;
+    flex-direction: row;
+    font-size: 20px;
+  }
+
+  .max-temperature-title,
+  .min-temperature-title,
+  .max-temperature,
+  .min-temperature {
+    text-align: center;
+  }
+
+  .min-temperature-block {
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .max-temperature-block {
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .hr-temperature {
+    transform: rotate(90deg);
+    width: 200px;
+  }
+}
